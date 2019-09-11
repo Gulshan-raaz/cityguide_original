@@ -1,0 +1,72 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.my.newproject3">
+	<uses-permission	android:name="android.permission.INTERNET"/>
+	<uses-permission	android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<application
+		android:allowBackup="true"
+		android:label="City  Guide "
+		android:icon="@drawable/app_icon"
+		android:largeHeap="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".MainActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action	android:name="android.intent.action.MAIN"/>
+				<category	android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".SignupActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".HomeActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".TermandconditionActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".AlldataActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".AlldisticActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".AlldatalistviewActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".ErrorActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name=".ShowdataActivity"
+			android:configChanges="orientation|screenSize"
+			android:theme="@style/AppTheme.FullScreen"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateHidden"/>
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version"/>
+		<provider
+			android:name="com.google.firebase.provider.FirebaseInitProvider"
+			android:authorities="com.my.newproject3.firebaseinitprovider"
+			android:exported="false"
+			android:initOrder="100"/>
+	</application>
+</manifest>
